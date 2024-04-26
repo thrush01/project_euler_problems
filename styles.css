@@ -1,0 +1,23 @@
+nav,
+.tab-content {
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.nav-tabs .nav-link {
+    padding: 0.25rem 2rem;
+
+}
+
+.nav-tabs .nav-link.active {
+    background-color: rgb(255, 157, 9);
+    color: black;
+    border-color: white;
+}
+
+.submit {
+    width: 100px;
+    margin-left: 40%;
+}
+
+@media (max-width:700px) {}
