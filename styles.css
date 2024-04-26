@@ -1,12 +1,11 @@
-nav,
-.tab-content {
+nav,.tab-content {
     margin-left: 30%;
-    margin-right: 30%;
+    margin-right: 25%;
 }
 
 .nav-tabs .nav-link {
     padding: 0.25rem 2rem;
-    margin: 0.25rem;
+    margin-left: 0.80rem;
 
 }
 

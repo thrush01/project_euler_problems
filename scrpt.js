@@ -14,7 +14,7 @@ const question3Button = document.getElementById('qustion3_button');
 question1Button.addEventListener('click', function () {
     const inputValue = question1Input.value;
 
-
+    //initial variables
     let sum = 0;
     let max = 1000;
 
@@ -27,12 +27,16 @@ question1Button.addEventListener('click', function () {
     }
     if(inputValue==sum){
     console.log(sum);
-    }   
+    }  
+    else{
+        console.log("wrong answer");
+    } 
 });
 
 question2Button.addEventListener('click', function () {
     const inputValue = question2Input.value;
 
+        //initial variables and calculations
     let n = 4000000
     let sum = 0
     let a = 1
@@ -55,7 +59,9 @@ question2Button.addEventListener('click', function () {
 
 question3Button.addEventListener('click', function () {
     const inputValue = question3Input.value;
+    
 
+    //inital variables and calculations
     let n=600851475143;
     let i=2;
     while(i<n){
