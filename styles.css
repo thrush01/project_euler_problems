@@ -1,11 +1,14 @@
 nav,.tab-content {
     margin-left: 30%;
     margin-right: 25%;
+    background-color: blue;
 }
 
 .nav-tabs .nav-link {
-    padding: 0.25rem 2rem;
+    padding: 0.25rem 3.4rem;
     margin-left: 0.80rem;
+    margin-left: 10px;
+
 
 }
 
