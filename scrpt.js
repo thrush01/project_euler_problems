@@ -9,22 +9,33 @@ $(document).ready(function (){
     const question3Input =  $('#question3_input');
     const question3Button = $('#qustion3_button');
 
+    const  f1=$("#footer1");
+    const ft1=$(".ft1");
+    const  f2=$("#footer2");
+    const answ=$(".answer");
+    const  f3=$("#footer3");
+    const ft3=$(".ft3");
+
     // Add event listeners to the submit buttons
     question1Button.on('click', function () {
         const inputValue = question1Input.val();
 
         //initial variables
         let sum = 0;
-        let max = 10;
+        let max = 25;
 
         for (let i = 1; i < max; i++) {
             if (i % 3 == 0 || i % 5 == 0) {
                 sum += i;
             }
         }
+
         if (inputValue == sum) {
             console.log(sum);
-            swal("Good job!", "You succeeded!", "success");
+            swal("Good job!", "Congratulation!", "success");
+            ft1.show();
+            f1.hide();
+           
         } else {
             console.log("wrong answer");
             swal("Incorrect!", "Try Again", "error");
@@ -52,7 +63,10 @@ $(document).ready(function (){
 
         if (inputValue == sum) {
             console.log(sum);
-            swal("Good job!", "You succeeded!", "seccess");
+            swal("Good job!", "You succeeded!", "success");
+            answ.show();
+             f2.hide();
+
         } else {
             swal("Incorrect!", "Try Again", "error");
         }
@@ -64,16 +78,18 @@ $(document).ready(function (){
         //initial variables and calculations
         let number = 600851475143;
         let i = 2;
-        while (i < n) {
+        while (i < number) {
             if (number % i == 0) {
                 number /= i;
             } else {
                 i++;
             }
         }
-        if (inputValue == n) {
-            console.log(n);
+        if (inputValue == number) {
+            console.log(number);
             swal("Good job!", "You succeeded!", "success");
+            ft3.show();
+            f3.hide();
         } else {
             swal("Incorrect!", "Try Again", "error");
         }

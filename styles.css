@@ -13,9 +13,20 @@ nav,.tab-content {
 }
 
 .nav-tabs .nav-link.active {
-    background-color: rgb(255, 157, 9);
+    background-color: rgba(253, 190, 95, 0.945);
     color: black;
     border-color: white;
+}
+.ft1,.answer,.ft3{
+    height:20%;
+    margin-top:10px;
+    margin-left: 15%;
+    padding: 5%;
+    margin-right: 15%;
+    box-shadow: rgb(218, 89, 89);
+    border:2px solid rgb(247, 237, 133);
+    background-color: rgb(255, 255, 255);
+ 
 }
 
 input{
@@ -23,4 +34,7 @@ input{
 }
 footer{
     margin-top: 10%;
+}
+.answer,.ft3,.ft1{
+    display: none;
 }
