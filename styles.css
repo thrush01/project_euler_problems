@@ -1,6 +1,6 @@
 nav, .tab-content, .nav-bar {
     margin-left: 30%;
-    margin-right: 25%;
+    margin-right: 23%;
     padding:-5px    ;
     border: 1px solid   rgb(250, 250, 208);
     box-shadow: 2px 2px 4px 0 rgba(63, 62, 56, 0.1);
@@ -8,9 +8,10 @@ nav, .tab-content, .nav-bar {
 }
 
 .nav-tabs .nav-link {
-    padding:0.2em 3rem;
+    padding:0.2em 1.6rem;
     margin-bottom: 0.3rem;
-    margin-right:  0.3rem;
+    margin-right: 0;
+    margin-left:  1rem;
 }
 
 .nav-tabs .nav-link.active {

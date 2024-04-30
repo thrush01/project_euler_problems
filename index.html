@@ -26,22 +26,22 @@
     <div class="container-fluid">
         <main>
            
-                <nav class="mt-3 navbar navbar-expand-xl " id="navbar">
+                <nav class="mt-3 navbar navbar-expand-lg " id="navbar">
 
-                    <div class=" nav-tabs bg-body-tertiary d-flex justify-content-center p-2" id="nav-tab"
-                        role="tablist">
+                    <div class=" nav-tabs bg-body-tertiary d-flex justify-content-start p-2" id="nav-tab "
+                        role="tablist" style="width:100%">
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
                             aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
                             <i class="navbar-toggler-icon"></i>
                         </button>
-                        <div class="collapse navbar-collapse" id="navMenu">
-                            <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab"
+                        <div class="collapse navbar-collapse justify-content-start" id="navMenu">
+                            <button class="nav-link active text-warp" id="nav-home-tab" data-bs-toggle="tab"
                                 data-bs-target="#question1" type="button" role="tab" aria-controls="nav-home"
                                 aria-selected="true">Question1</button>
                             <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab"
                                 data-bs-target="#question2" type="button" role="tab" aria-controls="nav-profile"
                                 aria-selected="false">Question2</button>
-                            <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab"
+                            <button class="nav-link text-wrap" id="nav-contact-tab" data-bs-toggle="tab"
                                 data-bs-target="#question3" type="button" role="tab" aria-controls="nav-contact"
                                 aria-selected="false">Question3</button>
                         </div>
@@ -65,7 +65,9 @@
                                 </label>
                             </div>
                             <div class="card-footer">
-                                <div class="answ1">The Answer is: <span id="ans1"></span></div>
+                                <div class="answ1">The Answer is: <span id="ans1"></span>
+                                <button>bt</button>
+                                </div>
                                 <div id="form1">
                                     <input type="text" id="question1_input" class="mb-3">
                                     <button class="btn btn-outline-primary btn-sm submit"
