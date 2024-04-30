@@ -1,28 +1,22 @@
-nav,.tab-content {
+nav, .tab-content, .nav-bar {
     margin-left: 30%;
     margin-right: 25%;
-    background-color: rgb(243, 243, 222);
+    padding:-5px    ;
+    border: 1px solid   rgb(250, 250, 208);
+    box-shadow: 2px 2px 4px 0 rgba(63, 62, 56, 0.1);
+    background-color: rgba(247, 247, 239, 0);
 }
 
 .nav-tabs .nav-link {
-    padding: 0.25rem 3.4rem;
-    margin-left: 0.80rem;
-    margin-left: 10px;
-
-
+    padding:0.2em 3rem;
+    margin-bottom: 0.3rem;
+    margin-right:  0.3rem;
 }
 
 .nav-tabs .nav-link.active {
     background-color: rgba(253, 190, 95, 0.945);
     color: black;
     border-color: white;
-}
-
-input{
-    width: 100%;
-}
-footer{
-    margin-top: 10%;
 }
 .answ1,.answ2,.answ3{
     display: none;
@@ -31,7 +25,31 @@ footer{
     margin-left: 15%;
     padding: 5%;
     margin-right: 15%;
-    box-shadow: rgb(218, 89, 89);
-    border:2px solid rgb(247, 237, 133);
-    background-color: rgb(255, 255, 255);
+    box-shadow: rgb(197, 158, 158);
+    border:2px solid rgb(112, 111, 100);
+    background-color: rgb(214, 235, 213);
+ 
 }
+span{
+    color: blue;
+    font-size: medium;
+    font-weight: bold;
+    background-color: rgb(220, 250, 50);
+}
+
+input{
+    width: 90%;
+}
+.card-header{
+    color: rgb(175, 130, 72);
+    font-size:large;
+    font-family:sans-serif;
+    font-weight: bold;
+}
+.card-body{
+    width:100%;
+}
+footer{
+    margin-top: 10%;
+}
+

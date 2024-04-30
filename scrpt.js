@@ -31,10 +31,11 @@ $(document).ready(function () {
         }
 
         if (inputValue == sum) {
-            console.log(sum);
+           
             swal("Good job!", "Congratulation!", "success");
             answ1.show();
             input1.hide();
+            $("#ans1").text(sum);
 
         } else {
             console.log("wrong answer");
@@ -62,10 +63,11 @@ $(document).ready(function () {
         }
 
         if (inputValue == sum) {
-            console.log(sum);
-            swal("Good job!", "You succeeded!", "success");
+           
+            swal("Good job!", "Congratulation", "success");
             answ2.show();
             input2.hide();
+            $("#ans2").text(sum);
 
         } else {
             swal("Incorrect!", "Try Again", "error");
@@ -86,10 +88,11 @@ $(document).ready(function () {
             }
         }
         if (inputValue == number) {
-            console.log(number);
-            swal("Good job!", "You succeeded!", "success");
+            
+            swal("Good job!", "Congratulation!", "success");
             answ3.show();
             input3.hide();
+            $("#ans3").text(number);
         } else {
             swal("Incorrect!", "Try Again", "error");
         }
