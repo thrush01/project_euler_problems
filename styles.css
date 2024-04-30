@@ -17,7 +17,15 @@ nav,.tab-content {
     color: black;
     border-color: white;
 }
-.ft1,.answer,.ft3{
+
+input{
+    width: 100%;
+}
+footer{
+    margin-top: 10%;
+}
+.answ1,.answ2,.answ3{
+    display: none;
     height:20%;
     margin-top:10px;
     margin-left: 15%;
@@ -26,15 +34,4 @@ nav,.tab-content {
     box-shadow: rgb(218, 89, 89);
     border:2px solid rgb(247, 237, 133);
     background-color: rgb(255, 255, 255);
- 
-}
-
-input{
-    width: 100%;
-}
-footer{
-    margin-top: 10%;
-}
-.answer,.ft3,.ft1{
-    display: none;
 }

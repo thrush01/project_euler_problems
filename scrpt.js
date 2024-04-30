@@ -1,4 +1,4 @@
-$(document).ready(function (){
+$(document).ready(function () {
 
     const question1Input = $('#question1_input');
     const question1Button = $('#question1_button');
@@ -6,15 +6,15 @@ $(document).ready(function (){
     const question2Input = $('#question2_input');
     const question2Button = $('#qustion2_button');
 
-    const question3Input =  $('#question3_input');
+    const question3Input = $('#question3_input');
     const question3Button = $('#qustion3_button');
 
-    const  f1=$("#footer1");
-    const ft1=$(".ft1");
-    const  f2=$("#footer2");
-    const answ=$(".answer");
-    const  f3=$("#footer3");
-    const ft3=$(".ft3");
+    const input1 = $("#form1");
+    const answ1 = $(".answ1");
+    const input2 = $("#form2");
+    const answ2 = $(".answ2");
+    const input3 = $("#form3");
+    const answ3 = $(".answ3");
 
     // Add event listeners to the submit buttons
     question1Button.on('click', function () {
@@ -33,9 +33,9 @@ $(document).ready(function (){
         if (inputValue == sum) {
             console.log(sum);
             swal("Good job!", "Congratulation!", "success");
-            ft1.show();
-            f1.hide();
-           
+            answ1.show();
+            input1.hide();
+
         } else {
             console.log("wrong answer");
             swal("Incorrect!", "Try Again", "error");
@@ -64,8 +64,8 @@ $(document).ready(function (){
         if (inputValue == sum) {
             console.log(sum);
             swal("Good job!", "You succeeded!", "success");
-            answ.show();
-             f2.hide();
+            answ2.show();
+            input2.hide();
 
         } else {
             swal("Incorrect!", "Try Again", "error");
@@ -88,8 +88,8 @@ $(document).ready(function (){
         if (inputValue == number) {
             console.log(number);
             swal("Good job!", "You succeeded!", "success");
-            ft3.show();
-            f3.hide();
+            answ3.show();
+            input3.hide();
         } else {
             swal("Incorrect!", "Try Again", "error");
         }
