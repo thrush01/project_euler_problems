@@ -2,10 +2,18 @@ nav,.tab-content,.nav-bar {
     margin-left: 30%;
     margin-right: 23%;
     padding: -5px;
-    border: 1px solid rgb(250, 250, 208);
+    border: 1px solid rgb(236, 236, 179);
     box-shadow: 2px 2px 4px 0 rgba(63, 62, 56, 0.1);
     background-color: rgba(247, 247, 239, 0);
    
+}
+.profile-info{
+    text-align: end;
+    margin-top:1px;
+   
+}
+i{
+    color:rgb(153, 150, 163);
 }
 
 .nav-tabs .nav-link {
