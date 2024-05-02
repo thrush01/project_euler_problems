@@ -20,6 +20,7 @@ $(document).ready(function () {
     //initial random numbers
    
     let randNum1=1000,randNum2=4000000,randNum3=600851475143;
+
     $("#randm").text(randNum1);
     $("#randm2").text(randNum2);
     $("#randm3").text(randNum3);
@@ -79,7 +80,7 @@ $(document).ready(function () {
             }
         }
         else if ($(event.target).is("#question2_button")) {
-            console.log("2");
+
             const inputValue = question2Input.val();
 
             //initial variables and calculations
@@ -107,7 +108,6 @@ $(document).ready(function () {
 
             const inputValue = question3Input.val();
             //initial variables and calculations
-            console.log("3");
             let number = randNum3;
             let i = 2;
             while (i < number) {
@@ -132,13 +132,5 @@ $(document).ready(function () {
     });
     /////////////////////////////////////////////////////////////////////////////////////
 
-
-    // Add event listeners to the submit buttons
-
-
-    //event listener for question 2 
-
-
-    //event listener for button 3
 
 });
