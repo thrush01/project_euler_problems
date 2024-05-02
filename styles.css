@@ -7,19 +7,22 @@ nav,
     border: 1px solid rgb(250, 250, 208);
     box-shadow: 2px 2px 4px 0 rgba(63, 62, 56, 0.1);
     background-color: rgba(247, 247, 239, 0);
+    
 }
 
 .nav-tabs .nav-link {
-    padding: 0.2em 1.6rem;
+    padding: 0.2em 1.8rem;
     margin-bottom: 0.3rem;
     margin-right: 0;
     margin-left: 1rem;
+    
 }
 
 .nav-tabs .nav-link.active {
     background-color: rgba(253, 190, 95, 0.945);
     color: black;
     border-color: white;
+    
 }
 
 .answ1,
