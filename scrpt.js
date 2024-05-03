@@ -12,6 +12,11 @@ $(document).ready(function () {
     let input3 = $("#form3");
     let answ3 = $(".answ3");
 
+    let in1= $("#np1");
+    let in2 = $("#np2");
+
+    let in3= $("#np3");
+    let in4 = $("#np4");
 
     
 
@@ -41,19 +46,20 @@ $(document).ready(function () {
 
         
         if ($(event.target).is("#question1_button")) {
-            console.log("1");
+           const x=in1.val();
+           const y=in2.val();
             const inputValue = question1Input.val();
             //initial variables
             let sum = 0;
             let max = inputValue;
 
             for (let i = 1; i < max; i++) {
-                if (i % 3 == 0 || i % 5 == 0) {
+                if (i % x == 0 || i % y == 0) {
                     sum += i;
                 }
             }
 
-            if (inputValue) {
+            if (inputValue !='') {
 
                 swal("Good job!", "Congratulation!", "success");
                 answ1.show();
@@ -68,11 +74,15 @@ $(document).ready(function () {
         }
         else if ($(event.target).is("#question2_button")) {
 
-            const inputValue = question2Input.val();
-
+            
+        
+          in4.val();
+           const inputValue = question2Input.val();
+ 
             //initial variables and calculations
             let number = inputValue;
-            let sum = 0, a = 1, b = 2,c;
+            let sum = 0, a =  parseInt(in3.val()), b =  parseInt(in4.val()),c;
+            
             while (b < number) {
                 if (b % 2 == 0) {
                     sum = sum + b;
