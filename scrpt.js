@@ -12,14 +12,6 @@ $(document).ready(function () {
     let input3 = $("#form3");
     let answ3 = $(".answ3");
 
-    let in1= $("#np1");
-    let in2 = $("#np2");
-
-    let in3= $("#np3");
-    let in4 = $("#np4");
-
-    
-
     //event triggers for tabs and generating random numbers
     $(document).on("click", "#refresh,#refresh2,#refresh3", function (event) {
 
@@ -46,8 +38,8 @@ $(document).ready(function () {
 
         
         if ($(event.target).is("#question1_button")) {
-           const x=in1.val();
-           const y=in2.val();
+           const x= $("#np1").val();
+           const y=$("#np2").val();
             const inputValue = question1Input.val();
             //initial variables
             let sum = 0;
@@ -60,8 +52,7 @@ $(document).ready(function () {
             }
 
             if (inputValue !='') {
-
-                swal("Good job!", "Congratulation!", "success");
+                swal("Done!", "-----", "success");
                 answ1.show();
                 input1.hide();
                 $("#ans1").text(sum);
@@ -74,14 +65,11 @@ $(document).ready(function () {
         }
         else if ($(event.target).is("#question2_button")) {
 
-            
-        
-          in4.val();
            const inputValue = question2Input.val();
  
             //initial variables and calculations
             let number = inputValue;
-            let sum = 0, a =  parseInt(in3.val()), b =  parseInt(in4.val()),c;
+            let sum = 0, a =  parseInt($("#np3").val()), b =  parseInt($("#np4").val()),c;
             
             while (b < number) {
                 if (b % 2 == 0) {
@@ -89,9 +77,8 @@ $(document).ready(function () {
                 }
                 c = a + b,a = b, b = c;
             }
-            if (inputValue !='') {
-
-                swal("Good job!", "Congratulation", "success");
+            if (inputValue !='' && a !='' && b!='') {
+                swal("Done!", "-----", "success");
                 answ2.show();
                 input2.hide();
                 $("#ans2").text(sum);
@@ -116,7 +103,7 @@ $(document).ready(function () {
             }
             if (inputValue !='') {
 
-                swal("Good job!", "Congratulation!", "success");
+                swal("Done!", "-------", "success");
                 answ3.show();
                 input3.hide();
                 $("#ans3").text(number);
@@ -125,9 +112,6 @@ $(document).ready(function () {
                 swal("Invalid Input!", "Try Again", "error");
             }
         }
-
-
     });
-    
-    
+      
 });
