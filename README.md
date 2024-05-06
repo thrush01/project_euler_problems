@@ -1,5 +1,7 @@
 # project_euler_problems
 
+*This project allow the user to enter range for the question in the tabs, make calculation And return the answer
+
 1. Features:
 *Header for project name 
 *navigation bar in the middle
@@ -7,12 +9,11 @@
 *tab content for the actual questions
 
 2. How to use it:
-*Each tab has its own type of questioning.U can navigate between the 3 tabs.
-*Type in the answer on the input box.
-    :if the answer is incorrect, a pop up message will alert you
-    :if the answer is correct, congratulation message will pop up, then the correct answer.
-*After the answer is displayed, below there is an icon for refreshing which will generate a new random number to solve.
-*Each time the refresh icon is clicked, the new number generate.
+*The project has 3 problems. First problem, user allows to enter the multiples (two) and a range.This will calculate the sum of the 3 multiples withing the range and return the answer.
+*Second problem ,Enter 2 values  for the start of the Fibonacci Numbers and the range. Program will calculate the 
+sum of even number within that range and return the answer.
+*Third problem the user enter the range and it returns the highest prime factor within the range
+
 
 3. Tools used:
 *html for structure.
